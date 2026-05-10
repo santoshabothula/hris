@@ -1,15 +1,32 @@
 {
-  "name": "common",
+  "name": "@hris/common",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
+  "description": "Common components and utilities for the HRIS project",
+  "main": "dist/common.cjs.js",
+  "module": "dist/common.es.js",
+  "types": "dist/index.d.ts",
+  "files": ["dist"],
+  "sideEffects": false,
+  "exports": {
+    ".": {
+      "import": "./dist/common.es.js",
+      "require": "./dist/common.cjs.js"
+    }
+  },
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview"
   },
-  "dependencies": {
+  "peerDependencies": {
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.1",
+    "@mui/icons-material": "^9.0.0",
+    "@mui/material": "^9.0.0",
+    
     "react": "^19.2.4",
     "react-dom": "^19.2.4"
   },

@@ -10,8 +10,9 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "react": "^19.2.4",
-    "react-dom": "^19.2.4"
+    "@hris/common": "file:../common/hris-common-1.0.0.tgz",
+    "@mui/x-date-pickers": "^9.0.2",
+    "dayjs": "^1.11.20"
   },
   "devDependencies": {
     "@eslint/js": "^9.39.4",
